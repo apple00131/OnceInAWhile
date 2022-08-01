@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica,"微軟正黑體",sans-serif;
+}
+
+.header_nav{
+    width: 100%;
+    height: 64px;
+    min-width: 850px;
+    background: rgb(255, 255, 255);
+    padding: 0 32px;
+    border-bottom: 1px solid rgb(149, 124, 124);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_title{
+    font-weight: lighter;
+    font-size: 18px;
+    color: #333;
+}
+.header_logo{
+    width: 48px;
+    height: 48px;
+    /* background: rgba(255, 255, 255, .8); */
+}
+
+.header_logo--lg{
+    width: 100%;
+    /* border-radius: 50%; */
+}
+
+.header_nav--list{
+    display: flex;
+    /* background: rgb(224, 224, 224); */
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav--item a{
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    width: 70px;
+    display: block;
+    text-align: center;
+}
+.header_nav--item a:hover{
+    background: rgb(149, 124, 124);
+    transition: .5s;
+    color: rgb(255, 246, 240);
+}
+/* ------------------------------------------------ */
+.section_hero{
+    min-width: 850px;
+    background-image: url(img/浮水印-051-01.jpg);
+    background-size: cover;
+    /* max-width: 800px; */
+    height: 400px;
+}
+.section_hero_text{
+    color: rgba(255, 246, 240, .8);
+    position: absolute;
+    bottom: 300px;
+    left: 100px;
+    font-weight: lighter;
+}
+h1{font-size: 40px;margin: 20px 0;}
+h3{font-size: 20px;margin: 5px 0;}
+/* ------------------------------------------------ */
+.section_one{
+    min-width: 850px;
+    margin-top: 64px;
+}
+.product_desciption{
+    display: flex;
+    /* width: 100%;
+    height: 300px; */
+    line-height: 22px;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+}
+.fw-n{
+    font-weight: normal;
+}
+.desciption_img img{
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+}
+.desciption_content{
+    width: 300px;
+    height: 100px;
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+    margin-top: 32px;
+}
+.row-reverse .desciption_img img{
+    margin-left: 10px;
+}
+.row-reverse .desciption_content{
+    margin-right: 10px;
+}
+/* ------------------------------------------------ */
+.section_link{
+    min-width: 850px;
+    height: 150px;
+    margin-top: 64px;
+    background-color: rgba(149, 124, 124, 0.2);
+    position: relative;
+}
+.section_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.section_content a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 2px solid #333;
+    /* border-radius: 5px; */
+    padding: 2px 20px;
+    margin: 0 12px;
+}
+.section_content a:hover{
+    border-bottom: 5px solid #333;
+    font-weight: bold;
+    transition: .5s;
+}
+/* ------------------------------------------------ */
+.section_product{
+    width: 850px;
+    margin: auto;
+}
+.product_page{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+/* ------------------------------------------------ */
+.product{
+    width: 240px;
+    height: 250px;
+    border: 1px solid rgba(149, 124, 124, 0.2);
+    position: relative;
+    margin: 20px;
+}
+.product img{
+    width: 100%;
+    padding: 10px 5px 5px 5px;
+}
+.product_name{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #333;
+}
+.product_price{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+
+    background: rgba(149, 124, 124, 0.2);
+    border: none;
+    border-radius: 30px;
+}
+.product_price:hover{
+    transition: 0.2s;
+    border-bottom: 1px solid #333;
+}
+/* ------------------------------------------------ */
+.section_product #wood, .section_product #window, .section_product #glass{
+    display: none;
+}
+/* ------------------------------------------------ */
+.footer{
+    width: 100%;
+    height: 380px;
+    background: rgba(149, 124, 124, 0.2);
+    min-width: 850px;
+}
+.contact_input{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%; 
+    margin: auto;
+    padding-top: 20px;
+}
+.labelText{
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+}
+.contact_input input, .contact_input textarea{
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #333;
+    outline: none;
+}
+.contact_input input::placeholder, .contact_input textarea::placeholder{
+    color: #bbb;
+}
+.contact_input input:focus, .contact_input textarea:focus{
+    border: 2px solid #333;
+}
+.contact_input textarea{
+    height: 60px;
+    resize: none;
+}
+.btn{
+    margin: 10px 0 0 0;
+    background: #333;
+    color:rgb(255, 246, 240);
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 16px;
+}
+/* ------------------------------------------------ */
+.contact_item{
+    display: flex;
+    justify-content: center;
+}
+.icon--sm{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin: 40px 20px;
+}
+.icon_img{
+    width: 100%;
+}
