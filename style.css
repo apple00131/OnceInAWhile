@@ -108,7 +108,7 @@ body{
 /* ------------------------------------------------ */
 .section_hero{
     min-width: 850px;
-    background-image: url(https://img.onl/S0X1kW);
+    background-image: url(https://img.onl/idONdq);
     background-size: cover;
     /* max-width: 800px; */
     height: 400px;
@@ -268,6 +268,7 @@ h3{font-size: 20px;margin: 5px 0;}
     padding: 5px 10px;
     color: #333;
     outline: none;
+    border: 1px solid #666;
 }
 .contact_input input::placeholder, .contact_input textarea::placeholder{
     color: #bbb;
@@ -280,7 +281,10 @@ h3{font-size: 20px;margin: 5px 0;}
     resize: none;
 }
 .btn{
-    margin: 10px 0 0 0;
+    /* margin: 20px 0 0 400px; */
+    width: 80px;
+    position: relative;
+    top: 20px;
     background: #333;
     color:rgb(255, 246, 240);
     cursor: pointer;
