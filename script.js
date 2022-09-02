@@ -27,9 +27,9 @@ $(document).ready(function(){
         let textarea = $('#inputContent').val();
         // console.log(email, textarea);
         
-        if(email == ""){
+        if(email.indexOf("@") == "-1"){
           // 驗證不完整
-          alert('您的信箱未填寫 !')
+          alert('您的信箱格式錯誤喔!')
         }else{
           //驗證成功
             
